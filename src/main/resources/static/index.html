@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Streaming App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>🎧 MUSIC STREAMING APP</h1>
+
+    <!-- Manage Songs Section -->
+    <div class="section">
+        <h2>🎵 Manage Songs</h2>
+        <button onclick="fetchSongs()">Get Songs</button>
+        <div id="songsList"></div>
+    </div>
+
+    <!-- Manage Playlists Section -->
+    <div class="section">
+        <h2>📚 Manage Playlists</h2>
+        <input type="text" id="playlistName" placeholder="Enter Playlist Name">
+        <button onclick="createPlaylist()">Create Playlist</button>
+        <div id="playlistsList"></div>
+    </div>
+
+    <!-- Audio Player -->
+    <div class="player">
+        <h3 id="nowPlaying">🎵 Now Playing: None</h3>
+        <audio id="audioPlayer" controls></audio>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
